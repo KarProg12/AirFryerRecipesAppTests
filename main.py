@@ -36,7 +36,7 @@ while True:
             break
         case ['/help']:
             app_funcs.print_user_manual()
-        case ['/shall']:
+        case ['/intable']:
             app_funcs.print_all_recipes_in_table()
         case ['/search']:
             app_funcs.search_recipe()
