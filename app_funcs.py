@@ -3,6 +3,15 @@ import difflib
 
 recipes = {}
 
+prompt = """\n---------------------------------------------------------
+Enter the recipe in this order:
+  'KEY: recipe_name' : 'VALUE: recipe_content'
+Type ['/help'] to show available commands.
+You can also search in recipes or in recipes ingredients.
+---------------------------------------------------------
+[~! REMEMBER ABOUT CORRECT recipe FORMAT !~]
+\n>>> """
+
 def nothing_to_add() -> None:
     """Func that displays communicate 'Nothing to add'"""
     print("\n!!! Nothing to add !!!")
@@ -66,7 +75,7 @@ def search_recipe() -> None:
         no_recipes()
         return
 
-    search_query = input("\n>>> Enter the recipe's ingredient/s you want to search (allows typos)\n>>> ").strip().lower()
+    search_query = input("\n>>> Enter the recipe's name or ingredient you want to search (allows typos)\n>>> ").strip().lower()
 
     # List of found accurate matches
     matches = []
