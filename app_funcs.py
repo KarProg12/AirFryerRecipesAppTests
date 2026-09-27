@@ -28,7 +28,7 @@ def print_user_manual() -> None:
     """Func for displaying user manual"""
     user_manual = """
 > Type ['/end'] or ['/exit'] to escape the program.
-> Type ['/shall'] to display all recipes in table.
+> Type ['/intable'] to display all recipes in table.
 > Type ['/search'] to search in recipes names or ingredients. 
 > Type ['/del'], ['/delete'] or ['/rm'] 
     to enter the deleting by name mode."""
