@@ -19,7 +19,8 @@ while True:
     try:
         # .strip() deletes unwanted spaces at the beginning and at the end
         user_cmd = input(prompt).strip()
-    # If user's input is Ctrl + C or Ctr + D escape the program without any errors and print summary of recipes
+    # If user's input is Ctrl + C or Ctr + D escape the
+    # program without any errors and print summary of recipes
     except(EOFError, KeyboardInterrupt):
         print('\n---------------------\n>> Escaped program <<\n---------------------')
         print(f"\n@| You've added {len(app_funcs.recipes)} recipe/s |@")
@@ -43,7 +44,8 @@ while True:
         case ['/del'] | ['/rm']:
             app_funcs.del_recipe()
 
-        # Check if user typed recipe without name or only recipe name without content and display communicate
+        # Check if user typed recipe without name or only
+        # recipe name without content and display communicate
         case [name, content] if name.strip() and content.strip():
             # After all validations above if everything is ok add recipe to dict
             app_funcs.recipes[name.strip().lower()] = content.strip()
