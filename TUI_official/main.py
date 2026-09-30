@@ -1,6 +1,6 @@
 # ---IMPORTS---
 import app_funcs
-
+from app_funcs import prompt
 
 prompt = """\n---------------------------------------------------------
 Enter the recipe in this order:
