@@ -45,7 +45,7 @@ def del_recipe() -> None:
         no_recipes()
         return
 
-    name_of_recipe = input("\n>>> Enter recipe name to delete\n>>> ").strip().lower()
+    name_of_recipe = input("\n>>> Enter recipe's name or ingredient/s to delete\n>>> ").strip().lower()
 
     deleted_recipe = recipes.pop(name_of_recipe, None)
 
@@ -76,7 +76,7 @@ def search_recipe() -> None:
         no_recipes()
         return
 
-    search_query = input("\n>>> Enter the recipe's ingredient/s you want to search (allows typos)\n>>> ").strip().lower()
+    search_query = input("\n>>> Enter the recipe's name or ingredient/s you want to search (allows typos)\n>>> ").strip().lower()
 
     # List of found accurate matches
     matches = []

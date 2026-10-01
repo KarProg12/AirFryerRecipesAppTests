@@ -44,7 +44,7 @@ def del_recipe() -> None:
         no_recipes()
         return
 
-    name_of_recipe = input("\n>>> Enter recipe name to delete\n>>> ").strip().lower()
+    name_of_recipe = input("\n>>> Enter recipe's name or ingredient/s to delete\n>>> ").strip().lower()
 
     deleted_recipe = recipes.pop(name_of_recipe, None)
 
