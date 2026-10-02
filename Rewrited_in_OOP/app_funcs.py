@@ -1,3 +1,7 @@
+import difflib
+import textwrap
+import inquirer
+
 class Recipe:
     def __init__(self, description, recipe_name, instructions, *ingredients):
         self.description = str(description)
@@ -15,3 +19,10 @@ class RecipeManager:
 
     def add_recipe(self):
         pass
+
+    def remove_recipe(self):
+        pass
+
+    def search_recipe(self):
+        pass
+
