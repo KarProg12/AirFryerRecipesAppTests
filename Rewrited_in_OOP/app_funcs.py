@@ -9,14 +9,13 @@ class Recipe:
         self.instructions = str(instructions)
         self.ingredients = list(ingredients)
 
+    def __str__(self) -> str:
+        print(f"Recipe description:\n  {self.description}\n  Recipe name: {self.recipe_name}\n"
+              f"  Ingredients:\n\t{self.ingredients}\n  Instructions:\n\t{self.instructions}")
+
 class RecipeManager:
     def __init__(self):
-        self.recipes = Recipe(
-            description=,
-            recipe_name=,
-            instructions=,
-
-        )
+        pass
 
     def add_recipe(self):
         pass
