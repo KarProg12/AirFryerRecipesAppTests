@@ -43,3 +43,27 @@ class RecipeManager:
     def run_app(self):
         pass
 
+class Commands:
+    def __init__(self):
+        self.commands_map = {}
+
+    def show_in_table(self):
+        pass
+
+    def search(self):
+        pass
+
+    def remove(self):
+        pass
+
+    def help(self):
+        help_menu = """
+        > Type ['/end'] or ['/exit'] to escape the program.
+        > Type ['/intable'] to display all recipes in table.
+        > Type ['/search'] to search in recipes names or ingredients. 
+        > Type ['/del'], ['/delete'] or ['/rm'] 
+            to enter the deleting by name mode."""
+        print(help_menu)
+
+    def exit_app(self):
+        """Func that escapes the program, saves everything and shows how """
