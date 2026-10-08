@@ -7,5 +7,3 @@ class Recipe:
         self.instructions = instructions
         # Assign to self.ingredients entered ingredients OR empty list if nothing was entered
         self.ingredients = ingredients or []
-
-
