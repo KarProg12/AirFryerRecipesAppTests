@@ -21,12 +21,3 @@ class Recipe:
         for ingredient in self.ingredients:
             print(f"- {ingredient}")
         print(f"------------------------\nINSTRUCTIONS:\n  {self.instructions}\n------------------------")
-
-bulka_z_maslem = Recipe("Bułka z masłem", "Szybkie śniadanie", "Kup bułkę, pokrój ją i posmaruj masłem",
-                   ["bułka", "masło"])
-bulka_z_maslem._display_formatted()
-
-bulka_z_dzemem = Recipe("Bułka z dżemem", "Drugie szybkie śniadanie",
-                        "Kup bułkę i dżem (jeśli go nie masz) i posmaruj masłem a potem dżemem",
-                        ["bułka", "masło", "dżem"])
-bulka_z_dzemem._display_formatted()
