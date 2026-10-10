@@ -14,7 +14,7 @@ class Recipe:
         # Assign to self.ingredients entered ingredients OR empty list if nothing was entered
         self.ingredients = ingredients or []
 
-    def _display_formatted(self):
+    def display_formatted(self):
         print(f"________________________\nRECIPE_NAME: {self.name}\n========================"
               f"\nDESCRIPTION:\n  {self.description}\n------------------------"
               f"\nINGREDIENTS:")
