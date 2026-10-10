@@ -1,4 +1,10 @@
 class Recipe:
+    # Variable type annotation for better readability and insights
+    name: str
+    description: str
+    instructions: str
+    ingredients: list[str]
+
     def __init__(self, name, description, instructions, ingredients=None):
         """Define every recipe common attributes like:
         name, description, ingredients, instructions (and they should also be shown in this order)"""
