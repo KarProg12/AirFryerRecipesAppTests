@@ -24,14 +24,18 @@ class Describer:
     """All recipes descriptions in one class"""
 
     def display_recipe_formatted(self, recipe: Recipe):
-        print(f"________________________\nRECIPE_NAME: {recipe.name}\n========================"
-              f"\nDESCRIPTION:\n  {
-                  recipe.description}\n------------------------"
-              f"\nINGREDIENTS:")
+        print(
+            f"________________________\nRECIPE_NAME: {recipe.name}\n========================"
+            f"\nDESCRIPTION:\n  {recipe.description}\n------------------------"
+            f"\nINGREDIENTS:"
+        )
         for ingredient in recipe.ingredients:
             print(f"- {ingredient}")
-        print(f"------------------------\nINSTRUCTIONS:\n  {
-              recipe.instructions}\n------------------------")
+        print(
+            f"------------------------\nINSTRUCTIONS:\n  {
+                recipe.instructions
+            }\n------------------------"
+        )
 
 
 class RecipesManager:
@@ -40,6 +44,8 @@ class RecipesManager:
     def __init__(self):
         self.formatted_recipes = {}
 
-    def add_recipe_to_formatted(self, recipe_name: str, recipe_class_instance_name: Recipe):
+    def add_recipe_to_formatted(
+        self, recipe_name: str, recipe_class_instance_name: Recipe
+    ):
         """Requires to enter name of the instance of the class Recipe"""
         self.formatted_recipes[recipe_name] = recipe_class_instance_name
