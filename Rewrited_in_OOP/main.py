@@ -1,6 +1,5 @@
 import app_funcs
 
-
 bulka_z_maslem = app_funcs.Recipe("Bułka z masłem", "Szybkie śniadanie", "Kup bułkę, pokrój ją i posmaruj masłem",
                    ["bułka", "masło"])
 bulka_z_maslem.display_formatted()
