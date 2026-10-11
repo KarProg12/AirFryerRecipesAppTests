@@ -7,7 +7,8 @@ class Recipe:
 
     def __init__(self, name, description, instructions, ingredients=None):
         """Define every recipe common attributes like:
-        name, description, ingredients, instructions (and they should also be shown in this order)"""
+        name, description, ingredients, instructions
+        (and they should also be shown in this order)"""
         self.name = name
         self.description = description
         self.instructions = instructions
@@ -18,15 +19,20 @@ class Recipe:
         describer = Describer()
         describer.display_recipe_formatted(self)
 
+
 class Describer:
     """All recipes descriptions in one class"""
+
     def display_recipe_formatted(self, recipe: Recipe):
         print(f"________________________\nRECIPE_NAME: {recipe.name}\n========================"
-              f"\nDESCRIPTION:\n  {recipe.description}\n------------------------"
+              f"\nDESCRIPTION:\n  {
+                  recipe.description}\n------------------------"
               f"\nINGREDIENTS:")
         for ingredient in recipe.ingredients:
             print(f"- {ingredient}")
-        print(f"------------------------\nINSTRUCTIONS:\n  {recipe.instructions}\n------------------------")
+        print(f"------------------------\nINSTRUCTIONS:\n  {
+              recipe.instructions}\n------------------------")
+
 
 class RecipesManager:
     formatted_recipes: dict[str, Recipe]
