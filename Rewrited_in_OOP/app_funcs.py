@@ -15,9 +15,14 @@ class Recipe:
         self.ingredients = ingredients or []
 
     def display_formatted(self):
-        print(f"________________________\nRECIPE_NAME: {self.name}\n========================"
-              f"\nDESCRIPTION:\n  {self.description}\n------------------------"
-              f"\nINGREDIENTS:")
+        print(
+            f"________________________\nRECIPE_NAME: {self.name}\n========================"
+            f"\nDESCRIPTION:\n  {self.description}\n------------------------"
+            f"\nINGREDIENTS:"
+        )
         for ingredient in self.ingredients:
             print(f"- {ingredient}")
-        print(f"------------------------\nINSTRUCTIONS:\n  {self.instructions}\n------------------------")
+        print(
+            f"------------------------\nINSTRUCTIONS:\n  {self.instructions}\n------------------------"
+        )
+
