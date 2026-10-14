@@ -2,8 +2,8 @@ class Recipe:
     # Variable type annotation for better readability and insights
     name: str
     description: str
-    instructions: str
     ingredients: list[str]
+    instructions: str
 
     def __init__(self, name, description, instructions, ingredients=None):
         """Define every recipe common attributes like:
@@ -49,3 +49,9 @@ class RecipesManager:
     ):
         """Requires to enter name of the instance of the class Recipe"""
         self.formatted_recipes[recipe_name] = recipe_class_instance_name
+
+    def add_recipe(self):
+        name_input = input("\n>>> Enter recipe name\n>>> ")
+        description_input = input("\n>>> Enter recipe description\n>>> ")
+        instructions_input = input("\n>>> Enter recipe instructions\n>>> ")
+        ingredients_input = input("\n>>> Enter recipe ingredients\n>>> ")
